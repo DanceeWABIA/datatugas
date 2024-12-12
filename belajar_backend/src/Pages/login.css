@@ -1,0 +1,82 @@
+/* Latar belakang dengan gambar dan gradien */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://st2.depositphotos.com/3047123/7446/i/950/depositphotos_74464853-stock-illustration-kid-working-on-a-homework.jpg') no-repeat center center, 
+              linear-gradient(135deg, rgba(106, 17, 203, 0.6), rgba(37, 117, 252, 0.6));
+  background-size: contain; /* Ubah ke contain untuk memperkecil gambar */
+  background-blend-mode: overlay; /* Campurkan gradien dengan gambar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Container utama login */
+.login-container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Input field */
+.login-container input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Tombol */
+.login-container button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.login-container button:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.login-container button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Link untuk registrasi */
+.login-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-container a {
+  color: #ff416c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}

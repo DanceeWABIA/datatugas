@@ -1,0 +1,199 @@
+/* Home Container */
+.home-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ecf0f1;
+}
+
+.sidebar .home-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.sidebar .btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.sidebar .btn:hover {
+  background-color: #2980b9;
+}
+
+/* Main Content */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.loading-text,
+.no-data {
+  font-size: 18px;
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table th {
+  background-color: #34495e;
+  color: #ecf0f1;
+  font-weight: bold;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.styled-table tr:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.styled-table td button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.styled-table .btn-edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+.styled-table .btn-edit:hover {
+  background-color: #e67e22;
+}
+
+.styled-table .btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.styled-table .btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.styled-table .btn-view {
+  background-color: #3498db;
+  color: white;
+}
+
+.styled-table .btn-view:hover {
+  background-color: #2980b9;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .styled-table {
+    font-size: 14px;
+  }
+
+  .styled-table th, .styled-table td {
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+/* Pencarian */
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Tombol Keluar di Navigasi */
+.sidebar .btn-logout {
+  background: linear-gradient(135deg, #e74c3c, #c0392b); /* Gradasi merah */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px; /* Membuat sudut lebih bulat */
+  width: 100%; /* Sesuaikan dengan lebar navigasi */
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: auto; /* Posisikan di bagian bawah navigasi */
+}
+
+.sidebar .btn-logout:hover {
+  background: linear-gradient(135deg, #c0392b, #a83224); /* Gradasi lebih gelap saat hover */
+  transform: translateY(-3px); /* Efek hover naik sedikit */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Bayangan lebih tebal saat hover */
+}
+
+.sidebar .btn-logout:active {
+  transform: translateY(0); /* Kembali ke posisi awal saat diklik */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan lebih kecil saat aktif */
+}
